@@ -26,7 +26,6 @@ $(function () {
             // Code to get current hour and compare it to each row that is created so that we can style it accordingly.
             var blockTime = parseInt(element);
             var currentHour = parseInt(moment().format("k"));
-            console.log(currentHour, blockTime)
 
             if (blockTime < currentHour) {
                 appointmentColumnEl.addClass('table-secondary');
