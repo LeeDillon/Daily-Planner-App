@@ -13,10 +13,13 @@ workingHours.forEach(element => {
     timeColumnEl.attr('scope', 'row');
     timeColumnEl.text(element);
     var appointmentColumnEl = $('<td>');
-    var saveButtonEl = $('<td>');
-    timeslotRowEl.append(timeColumnEl, appointmentColumnEl, saveButtonEl);
+    appointmentColumnEl.addClass('table-secondary');
+    appointmentColumnEl.append('<div class="input-group mb-3"> <input type = "text" class= "form-control" placeholder = "Enter details here..." aria - label="Enter details here..." aria - describedby="button-addon2">  <div class="input-group-append"> <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button> </div> </div > ');
+    // var saveButtonColumnEl = $('<td>');
+    // saveButtonColumnEl.append('<button type="button" class="btn btn-primary btn-lg btn-block">Save</button>')
+    timeslotRowEl.append(timeColumnEl, appointmentColumnEl);
 
     tableBodyEl.append(timeslotRowEl);
-    console.log(timeslotRowEl);
+
 
 });
