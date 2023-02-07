@@ -1,4 +1,4 @@
-# Third-Party APIs: Work Day Scheduler
+# Daily Planner App: Workin' 9 to 5, what a way to make a livin'
 
 
 ## Overview
